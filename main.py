@@ -1,12 +1,17 @@
-# This is a sample Python script.
+# Solve the quadratic equation ax**2 + bx + c = 0
 
-# Python Program to calculate the square root
+# import complex math module
+import cmath
 
-# Note: change this value for a different result
-num = 8
+a = 1
+b = 5
+c = 6
 
-# To take the input from the user
-#num = float(input('Enter a number: '))
+# calculate the discriminant
+d = (b**2) - (4*a*c)
 
-num_sqrt = num ** 0.5
-print('The square root of %0.3f is %0.3f'%(num ,num_sqrt))
+# find two solutions
+sol1 = (-b-cmath.sqrt(d))/(2*a)
+sol2 = (-b+cmath.sqrt(d))/(2*a)
+
+print('The solution are {0} and {1}'.format(sol1,sol2))
